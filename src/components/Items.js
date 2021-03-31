@@ -10,8 +10,8 @@ class Items extends Component {
     return (
       <div>
         <h1>Items: </h1>
-        {this.state.items.map((singleItem) => {
-          return <div>{singleItem.name}</div>;
+        {this.state.items.map((singleItem, index) => {
+          return <div key={index}><h4>{singleItem.name}</h4></div>;
         })}
       </div>
     );
