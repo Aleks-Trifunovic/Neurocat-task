@@ -1,8 +1,8 @@
 [
-  { "id" : 1, "item" : "Milk" },
-  { "id" : 2, "item" : "Coffee" },
-  { "id" : 3, "item" : "Oranges" },
-  { "id" : 4, "item" : "Bread" },
-  { "id" : 5, "item": "Cheese" },
-  { "id" : 6, "item": "Pizza" }
+  { "id" : 1, "name" : "Milk" },
+  { "id" : 2, "name" : "Coffee" },
+  { "id" : 3, "name" : "Oranges" },
+  { "id" : 4, "name" : "Bread" },
+  { "id" : 5, "name": "Cheese" },
+  { "id" : 6, "name": "Pizza" }
 ]
