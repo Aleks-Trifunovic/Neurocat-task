@@ -6,9 +6,19 @@ class Items extends Component {
     items: itemsJson
   };
 
+  handleAdd = () => {
+      let randomIndex = Math.floor(Math.random() * itemsJson.length)
+      let addRandom = itemsJson[randomIndex];
+
+      this.setState({
+        items: [...this.state.items, addRandom],
+      });
+  }
+
   render() {
     return (
       <div>
+      <button onClick={this.handleAdd}>+</button>
         <h1>Items: </h1>
         {this.state.items.map((singleItem, index) => {
           return <div key={index}><h4>{singleItem.name}</h4></div>;
