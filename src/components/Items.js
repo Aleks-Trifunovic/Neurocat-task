@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import itemsJson from "../items.json";
 import Search from "./Search.js";
+import { Button } from "react-bootstrap";
 
 class Items extends Component {
   state = {
@@ -31,14 +32,20 @@ class Items extends Component {
   render() {
       const{filteredItems} = this.state
     return (
-      <div>
-        <Search myChange={this.handleChange} />
-        <button onClick={this.handleAdd}>+</button>
+      <div className="displayed">
+        <div className="nav">
+          <Search myChange={this.handleChange} />
+            
+          <Button className="button" variant="outline-primary" onClick={this.handleAdd}>
+            +
+          </Button>
+        </div>
         <h1>Items: </h1>
         {filteredItems.map((singleItem, index) => {
           return (
             <div key={index}>
               <h4>{singleItem.name}</h4>
+              <hr className="line" />
             </div>
           );
         })}
