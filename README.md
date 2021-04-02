@@ -10,7 +10,7 @@
 <h5>Whenever the text input changes the list of items should be filtered by items 
 that contain the search term.</h5>
 
-<h4>3. Plus-button:(+)</h4>
+<h4>3. Plus-button(+):</h4>
 <h5>When pressed, then a random text item should be added to the list.</h5>
 
 
