@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import itemsJson from "../items.json";
 import Search from "./Search.js";
-import { Button } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
+import video from "./Video/video.mp4"
 
 class Items extends Component {
   state = {
@@ -32,23 +33,39 @@ class Items extends Component {
   render() {
       const{filteredItems} = this.state
     return (
-      <div className="displayed">
-        <div className="nav">
-          <Search myChange={this.handleChange} />
-            
-          <Button className="button" variant="outline-primary" onClick={this.handleAdd}>
-            +
-          </Button>
-        </div>
-        <h1>Items: </h1>
-        {filteredItems.map((singleItem, index) => {
-          return (
-            <div key={index}>
-              <h4>{singleItem.name}</h4>
-              <hr className="line" />
+      <div>
+      <video className="vid" autoPlay loop muted
+      style={{
+          position: "absolute",
+          width: "100%"
+      }}>
+          <source src={video} type="video/mp4"/>
+      </video>
+        <div className="displayed">
+          <Card className="card">
+            <div className="nav">
+              <Search myChange={this.handleChange} />
+              <Button
+                className="button"
+                data-tooltip="Click to add items"
+                variant="outline-primary"
+                onClick={this.handleAdd}>
+                +
+              </Button>
             </div>
-          );
-        })}
+            <hr className="line2"/>
+            <img src="../../neurocatLogo.png" style={{width: "50px"}}/>
+            <br/>
+            {filteredItems.map((singleItem, index) => {
+              return (
+                <div key={index}>
+                  <h5>{singleItem.name}</h5>
+                  <hr className="line" />
+                </div>
+              );
+            })}
+          </Card>
+        </div>
       </div>
     );
   }

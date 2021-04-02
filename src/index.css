@@ -21,3 +21,53 @@ body {
   padding: 0px;
   margin: 0px 5px 0px 0px;
 }
+
+.button{
+  position:relative;
+  align-items: center;
+}
+
+.button::before,
+.button::after {
+  --scale: 0;
+  position:absolute;
+  right: -.25rem;
+  left: 130%;
+  transform: translateY(35%) translateY(-50%) scale(var(--scale));
+  transition: 100ms transform;
+  transform-origin: left center;
+}
+
+.button::before{
+  content:attr(data-tooltip);
+  color: white;
+  padding: .10rem;
+  border-radius: .3rem;
+  text-align: center;
+  width: max-content;
+  max-height: 100%;
+  background: gray;
+}
+
+.button:hover::before{
+  --scale: 1;
+}
+
+.card {
+  width: max-content;
+  margin: 20px;
+  padding: 20px;
+  border-radius: .5rem;
+  background-color:whitesmoke;
+
+}
+.vid {
+  margin-top: -20px ;
+  
+}
+
+.line2{
+  background-color:gray;
+  border:thin 1px;
+
+  }
