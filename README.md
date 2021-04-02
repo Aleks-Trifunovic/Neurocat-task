@@ -28,3 +28,7 @@ that contain the search term.</h5>
 - Browser tab name set to "Neurocat App".
 - Browser tab icon set to Neurocat logo.
 - Styling inspired by Neurocat web page.
+
+
+<h2>Link to the deployed app:</h2>
+- https://neurocat-task.vercel.app/
