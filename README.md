@@ -20,10 +20,10 @@ that contain the search term.</h5>
 
 
 <h2>Features implemented:</h2>
-- A list of text items.
-- Fully functional search bar that is filtering items by search term.
-- Plus-button that adds a random text item to the list when pressed.
-- Plus-button tooltip that pops up when mouse is hovered over button.
-- Browser tab name set to "Neurocat App".
-- Browser tab icon set to Neurocat logo.
-- Styling inspired by Neurocat web page.
+* A list of text items.
+* Fully functional search bar that is filtering items by search term.
+* Plus-button that adds a random text item to the list when pressed.
+* Plus-button tooltip that pops up when mouse is hovered over button.
+* Browser tab name set to "Neurocat App".
+* Browser tab icon set to Neurocat logo.
+* Styling inspired by Neurocat web page.
